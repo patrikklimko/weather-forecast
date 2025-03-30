@@ -1,46 +1,50 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ **Weather Forecast Application Setup Instructions**
 
-## Available Scripts
+Step 1: Clone the Repository
 
-In the project directory, you can run:
+First, clone the repository to your local machine using Git. Open your terminal or Git Bash and run the following command:
 
-### `npm start`
+```
+git clone https://github.com/your-username/your-repository-name.git
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Replace `your-username` and `your-repository-name` with the appropriate GitHub username and repository name.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Step 2: Install Dependencies
 
-### `npm test`
+Navigate into the project directory:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+cd your-repository-name
+```
 
-### `npm run build`
+Install the required dependencies by running:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This will install all the necessary libraries and dependencies listed in the `package.json` file.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Step 3: Run the Application
 
-### `npm run eject`
+Now you can start the development server. Run the following command:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+npm start
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This will start the application and open it in your default browser at [http://localhost:3000](http://localhost:3000).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Step 4: Test the Application
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Open your browser and go to [http://localhost:3000](http://localhost:3000).
+- You should see the weather search and display components.
+- Enter a location (e.g., city name) in the search bar to see the current weather 
 
-## Learn More
+Step 5: Additional Information
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- The application is built with React and TypeScript.
+- Data is fetched from the WeatherStack API.
+- The frontend is styled using `styled-components`, and weather icons are displayed using `react-icons`.
