@@ -1,6 +1,6 @@
 import React from 'react';
-import WeatherSearch from '../components/WeatherSearch';  // Adjusted path
-import { GlobalStyles } from '../styles/GlobalStyles';   // Adjusted path
+import WeatherSearch from '../components/WeatherSearch';  
+import { GlobalStyles } from '../styles/GlobalStyles';   
 import styled from 'styled-components';
 
 const Container = styled.div`

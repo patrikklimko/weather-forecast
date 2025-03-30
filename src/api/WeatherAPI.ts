@@ -1,8 +1,7 @@
 import axios from 'axios';
 
 
-const API_KEY = process.env.REACT_APP_WEATHER_API_KEY; // Use the environment variable
-// In a real-world application, you should store your API key in an environment variable or a secure vault.
+const API_KEY = process.env.REACT_APP_WEATHER_API_KEY; 
 const BASE_URL = 'http://api.weatherstack.com';
 
 export const fetchWeatherData = async (location: string) => {
