@@ -16,7 +16,7 @@ Step 2: Install Dependencies
 Navigate into the project directory:
 
 ```
-cd your-repository-name
+cd 'weather-forecast'
 ```
 
 Install the required dependencies by running:
