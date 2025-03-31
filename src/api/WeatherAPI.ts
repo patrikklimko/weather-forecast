@@ -1,8 +1,12 @@
 import axios from 'axios';
 
-
-const API_KEY = process.env.REACT_APP_WEATHER_API_KEY; 
+// Ensure the environment variable is available
+const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
 const BASE_URL = 'http://api.weatherstack.com';
+
+if (!API_KEY) {
+  throw new Error("Missing REACT_APP_WEATHER_API_KEY in environment variables!");
+}
 
 export const fetchWeatherData = async (location: string) => {
   try {
