@@ -1,50 +1,62 @@
+# Weather Forecast Application - Setup Guide
 
- **Weather Forecast Application Setup Instructions**
+## Prerequisites
+Before running the application, ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (Latest stable version recommended)
+- [Git](https://git-scm.com/)
+- [Visual Studio Code](https://code.visualstudio.com/) (or any preferred code editor)
 
-Step 1: Clone the Repository
+## Step-by-Step Setup Guide
 
-First, clone the repository to your local machine using Git. Open your terminal or Git Bash and run the following command:
-
-```
-git clone https://github.com/your-username/your-repository-name.git
-```
-
-Replace `your-username` and `your-repository-name` with the appropriate GitHub username and repository name.
-
-Step 2: Install Dependencies
-
-Navigate into the project directory:
-
-```
-cd 'weather-forecast'
+### 1. Clone the Repository
+Open **Visual Studio Code** and launch a new terminal. Then, run the following command to clone the project:
+```sh
+git clone https://github.com/patrikklimko/weather-forecast
 ```
 
-Install the required dependencies by running:
-
+### 2. Navigate to the Project Directory
+Once the cloning process is complete, change into the project folder:
+```sh
+cd weather-forecast
 ```
+
+### 3. Install Dependencies
+Run the following command to install all required dependencies:
+```sh
 npm install
 ```
 
-This will install all the necessary libraries and dependencies listed in the `package.json` file.
+### 4. Set Up Environment Variables
+To keep the API key secure, follow these steps:
+1. Inside the project directory, create a new file named `.env`
+2. Open the `.env` file and add your API key like this:
+   ```sh
+   REACT_APP_WEATHER_API_KEY=your_api_key_here
+   ```
+   - **Important:** Replace `your_api_key_here` with your actual WeatherStack API key.
+   - The `.env` file is already ignored by Git and won’t be shared in the repository.
 
-Step 3: Run the Application
-
-Now you can start the development server. Run the following command:
-
-```
+### 5. Start the Application
+Run the following command to start the development server:
+```sh
 npm start
 ```
 
-This will start the application and open it in your default browser at [http://localhost:3000](http://localhost:3000).
+This will launch the application in your default web browser. If it doesn’t open automatically, go to:
+```
+http://localhost:3000
+```
 
-Step 4: Test the Application
+### Additional Notes
+- If you encounter any issues with dependencies, try running:
+  ```sh
+  npm install --legacy-peer-deps
+  ```
+- If the API key is not being recognized, restart the development server after saving the `.env` file.
 
-- Open your browser and go to [http://localhost:3000](http://localhost:3000).
-- You should see the weather search and display components.
-- Enter a location (e.g., city name) in the search bar to see the current weather 
+For any further questions, feel free to reach out!
 
-Step 5: Additional Information
+---
+**Author:** Patrik Klimko
+**GitHub Repository:** [Weather Forecast](https://github.com/patrikklimko/weather-forecast)
 
-- The application is built with React and TypeScript.
-- Data is fetched from the WeatherStack API.
-- The frontend is styled using `styled-components`, and weather icons are displayed using `react-icons`.
