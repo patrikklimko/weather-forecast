@@ -20,13 +20,18 @@ Once the cloning process is complete, change into the project folder:
 cd weather-forecast
 ```
 
-### 3. Install Dependencies
-Run the following command to install all required dependencies:
+### 3. Write in the console
 ```sh
-npm install
+code .
 ```
 
-### 4. Set Up Environment Variables
+### 4. Install Dependencies
+Run the following command to install all required dependencies:
+```sh
+npm install --legacy-peer-deps
+```
+
+### 5. Set Up Environment Variables
 To keep the API key secure, follow these steps:
 1. Inside the project directory, create a new file named `.env`
 2. Open the `.env` file and add your API key like this:
@@ -36,7 +41,7 @@ To keep the API key secure, follow these steps:
    - **Important:** Replace `your_api_key_here` with your actual WeatherStack API key.
    - The `.env` file is already ignored by Git and won’t be shared in the repository.
 
-### 5. Start the Application
+### 6. Start the Application
 Run the following command to start the development server:
 ```sh
 npm start
